@@ -6,7 +6,7 @@
 /*   By: rde-oliv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/05 14:07:21 by rde-oliv          #+#    #+#             */
-/*   Updated: 2021/01/05 15:17:52 by rde-oliv         ###   ########.fr       */
+/*   Updated: 2021/01/05 16:40:02 by rde-oliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	main(int argc, char **argv)
 		{
 			str = argv[i];
 			for (int j = 0; j < str.size(); j++)
-					std::cout << (char)toupper(str.at(j));
+				std::cout << (char)toupper(str.at(j));
 		}
 	}
 	else
