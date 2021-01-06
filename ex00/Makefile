@@ -1,11 +1,12 @@
-NAME = megaphone
-SRC  = megaphone.cpp
-CC   = clang++
+NAME   = megaphone
+SRC    = megaphone.cpp
+CC     = clang++
+CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
 $(NAME): $(SRC)
-	$(CC) $(SRC) -o $(NAME)
+	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
 
 re: fclean all
 
