@@ -7,6 +7,8 @@ all: $(NAME)
 $(NAME): $(SRC)
 	$(CC) $(SRC) -o $(NAME)
 
+re: fclean all
+
 clean: fclean
 
 fclean:
