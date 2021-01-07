@@ -1,5 +1,5 @@
-NAME   = megaphone
-SRC    = megaphone.cpp
+NAME   = CrappyBook
+SRC    = CrappyBook.cpp PhoneBook.cpp
 CC     = clang++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 
