@@ -6,7 +6,7 @@
 /*   By: rde-oliv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/06 09:12:53 by rde-oliv          #+#    #+#             */
-/*   Updated: 2021/01/07 12:29:12 by rde-oliv         ###   ########.fr       */
+/*   Updated: 2021/01/07 13:13:48 by rde-oliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,8 @@ void	PhoneBook::open(void)
 	std::stringstream ss;
 	ss << cmd;
 	ss >> id;
-	if (cmd.size() < 1 || !std::isdigit(cmd.at(0)) || pb[id].empty)
+	if (cmd.size() < 1 || !std::isdigit(cmd.at(0)) ||
+		id >= PHONEB_MAX || pb[id].empty)
 	{
 		std::cout << "error: index not found." << std::endl;
 		return ;
