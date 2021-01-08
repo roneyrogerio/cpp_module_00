@@ -6,11 +6,33 @@
 /*   By: rde-oliv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/06 09:12:53 by rde-oliv          #+#    #+#             */
-/*   Updated: 2021/01/07 13:13:48 by rde-oliv         ###   ########.fr       */
+/*   Updated: 2021/01/08 13:40:10 by rde-oliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
+
+PhoneItem::PhoneItem(void)
+{
+	form[0]  = "first name";
+	form[1]  = "last name";
+	form[2]  = "nickname";
+	form[3]  = "login";
+	form[4]  = "postal address";
+	form[5]  = "email address";
+	form[6]  = "phone number";
+	form[7]  = "birthday date";
+	form[8]  = "favorite meal";
+	form[9]  = "underwear color";
+	form[10] = "darkest secret";
+	empty    = 1;
+}
+
+PhoneBook::PhoneBook()
+{
+	id     = 0;
+	active = true;
+}
 
 void		PhoneBook::add(void)
 {
