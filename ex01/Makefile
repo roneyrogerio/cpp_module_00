@@ -1,5 +1,5 @@
 NAME   = CrappyBook
-SRC    = CrappyBook.cpp PhoneBook.cpp
+SRC    = CrappyBook.cpp PhoneBook.cpp PhoneItem.cpp
 CC     = clang++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 
